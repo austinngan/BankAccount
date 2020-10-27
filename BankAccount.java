@@ -7,10 +7,16 @@ public class BankAccount{
     accountID=id;
     password=pw;
   }
-  public String getID(){
+  public String getAccountID(){
     return ("The account ID is "+accountID);
   }
-  public String getBal(){
+  public String getBalance(){
     return ("Your balance is $"+balance);
+  }
+  public void setPassword(String newPass){
+    password=newPass;
+  }
+  public String getPassword(){
+    return ("The password is "+password);
   }
 }
