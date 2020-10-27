@@ -7,11 +7,11 @@ public class BankAccount{
     accountID=id;
     password=pw;
   }
-  public String getAccountID(){
-    return ("The account ID is "+accountID);
+  public int getAccountID(){
+    return (accountID);
   }
-  public String getBalance(){
-    return ("Your balance is $"+balance);
+  public double getBalance(){
+    return (balance);
   }
   public void setPassword(String newPass){
     password=newPass;
@@ -43,6 +43,6 @@ public class BankAccount{
     }
   }
   public String toString(){
-    return (accountID+"\t"+"$"+balance);
+    return (accountID+"\t"+balance);
   }
 }
