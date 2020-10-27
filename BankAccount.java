@@ -25,6 +25,20 @@ public class BankAccount{
     }
     else{
       balance=balance+amount;
+      balance=Math.round(balance*1000.0)/1000.0;
+      return true;
+    }
+  }
+  public boolean withdraw(double amount){
+    if (amount>balance){
+      return false;
+    }
+    if (amount<0){
+      return false;
+    }
+    else{
+      balance=balance-amount;
+      balance=Math.round(balance*1000.0)/1000.0;
       return true;
     }
   }
