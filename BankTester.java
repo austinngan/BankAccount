@@ -8,5 +8,7 @@ public class BankTester{
     System.out.println(a1.getPassword());
     a1.deposit(1423.33);
     System.out.println(a1.getBalance());
+    a1.withdraw(20.14);
+    System.out.println(a1.getBalance());
   }
 }
