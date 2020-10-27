@@ -7,4 +7,10 @@ public class BankAccount{
     accountID=id;
     password=pw;
   }
+  public int getID(){
+    return ("The account ID is "+accountID);
+  }
+  public double getBal(){
+    return ("Your balance is $"+balance);
+  }
 }
